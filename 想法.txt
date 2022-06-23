@@ -1,0 +1,16 @@
+stylegan2模型很火，可以复现一下
+modify network structure：
+
+hinge loss
+
+饱和非饱和gan
+
+实验指标：loss没有用，不能代表模型的收敛性。可以每隔多少个epoch或iteration就计算一下fid。提升稳定性的论文会比较充分训练后的fid和之前的fid或，计算fid的均值和方差。
+
+每个epoch计算一次fid
+
+马尔科夫链和变分推断
+
+思路：
+多判别器gan和分布式gan的共同点：都是为生成器提供不同视角的信息。（哪种更好？）
+co-training 没用分布式不代表不好用（可能没想到用）
